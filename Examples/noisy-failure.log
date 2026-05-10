@@ -1,0 +1,48 @@
+> Configure project :
+Using Gradle 8.8
+Resolving plugins
+Plugin cache hit
+Dependency graph ready
+Task graph calculated
+> Task :compileJava
+Compiling 78 source files
+Note: Some input files use unchecked operations.
+Note: Recompile with -Xlint:unchecked for details.
+> Task :processResources
+Copying resources
+> Task :classes
+Classes are up to date
+> Task :compileTestJava
+Compiling 31 test files
+> Task :processTestResources
+Copying test resources
+> Task :testClasses
+Test classes are up to date
+> Task :test
+UserRepositoryTest > shouldCreateUser PASSED
+UserRepositoryTest > shouldUpdateUser PASSED
+TaskRepositoryTest > shouldPersistTask FAILED
+    org.testcontainers.containers.ContainerLaunchException: Container startup failed
+        at org.testcontainers.containers.GenericContainer.doStart(GenericContainer.java:359)
+        at org.testcontainers.containers.GenericContainer.start(GenericContainer.java:330)
+    Caused by: java.lang.IllegalStateException: Could not find a valid Docker environment.
+        at org.testcontainers.dockerclient.DockerClientProviderStrategy.getFirstValidStrategy(DockerClientProviderStrategy.java:277)
+NotificationServiceTest > shouldSendDigest PASSED
+MeetingServiceTest > shouldCreateMeeting PASSED
+OPENAI_API_KEY=example-placeholder
+Authorization: Bearer example-placeholder
+Generating test report
+Uploading local report artifacts
+Cleaning temporary directories
+Build cache entry stored
+42 tests completed, 1 failed
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests.
+
+* Try:
+Run with --stacktrace option to get the stack trace.
+Run with --info or --debug option to get more log output.

@@ -1,0 +1,13 @@
+> Task :test FAILED
+
+TaskRepositoryTest > shouldPersistTask FAILED
+    org.testcontainers.containers.ContainerLaunchException: Container startup failed
+        at org.testcontainers.containers.GenericContainer.doStart(GenericContainer.java:359)
+        at org.testcontainers.containers.GenericContainer.start(GenericContainer.java:330)
+    Caused by: java.lang.IllegalStateException: Could not find a valid Docker environment.
+        at org.testcontainers.dockerclient.DockerClientProviderStrategy.getFirstValidStrategy(DockerClientProviderStrategy.java:277)
+
+OPENAI_API_KEY=example-placeholder
+Authorization: Bearer example-placeholder
+
+42 tests completed, 1 failed
